@@ -1,4 +1,22 @@
+---
+layout: default
+title:  OpenAI-Compatible RESTful APIs & SDK
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
 # OpenAI-Compatible RESTful APIs & SDK
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 
 FastChat provides OpenAI-compatible APIs for its supported models, so you can use FastChat as a local drop-in replacement for OpenAI APIs.
 The FastChat server is compatible with both [openai-python](https://github.com/openai/openai-python) library and cURL commands.
@@ -30,6 +48,7 @@ python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
 Now, let us test the API server.
 
 ### OpenAI Official SDK
+
 The goal of `openai_api_server.py` is to implement a fully OpenAI-compatible API server, so the models can be used directly with [openai-python](https://github.com/openai/openai-python) library.
 
 First, install openai-python:

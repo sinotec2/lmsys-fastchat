@@ -1,9 +1,30 @@
+---
+layout: default
+title:  vLLM Integration
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
+
 # vLLM Integration
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 You can use [vLLM](https://vllm.ai/) as an optimized worker implementation in FastChat.
 It offers advanced continuous batching and a much higher (~10x) throughput.
 See the supported models [here](https://vllm.readthedocs.io/en/latest/models/supported_models.html).
 
 ## Instructions
+
 1. Install vLLM.
     ```
     pip install vllm

@@ -1,4 +1,22 @@
+---
+layout: default
+title:  Local LangChain with FastChat
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
 # Local LangChain with FastChat
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 
 [LangChain](https://python.langchain.com/en/latest/index.html) is a library that facilitates the development of applications by leveraging large language models (LLMs) and enabling their composition with other sources of computation or knowledge.
 FastChat's OpenAI-compatible [API server](openai_api.md) enables using LangChain with open models seamlessly.

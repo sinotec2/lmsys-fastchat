@@ -1,10 +1,29 @@
+---
+layout: default
+title:  AWQ 4bit Inference
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
 # AWQ 4bit Inference
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 
 We integrated [AWQ](https://github.com/mit-han-lab/llm-awq) into FastChat to provide **efficient and accurate** 4bit LLM inference.
 
 ## Install AWQ
 
 Setup environment (please refer to [this link](https://github.com/mit-han-lab/llm-awq#install) for more details):
+
 ```bash
 conda create -n fastchat-awq python=3.10 -y
 conda activate fastchat-awq

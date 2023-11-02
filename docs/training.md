@@ -1,4 +1,23 @@
-### Fine-tuning FastChat-T5
+---
+layout: default
+title:  Fine-tuning FastChat-T5
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
+# Fine-tuning FastChat-T5
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 You can use the following command to train FastChat-T5 with 4 x A100 (40GB).
 ```bash
 torchrun --nproc_per_node=4 --master_port=9778 fastchat/train/train_flant5.py \
@@ -30,7 +49,9 @@ torchrun --nproc_per_node=4 --master_port=9778 fastchat/train/train_flant5.py \
 After training, please use our post-processing [function](https://github.com/lm-sys/FastChat/blob/55051ad0f23fef5eeecbda14a2e3e128ffcb2a98/fastchat/utils.py#L166-L185) to update the saved model weight. Additional discussions can be found [here](https://github.com/lm-sys/FastChat/issues/643).
 
 ### Fine-tuning using (Q)LoRA
+
 You can use the following command to train Vicuna-7B using QLoRA using ZeRO2. Note that ZeRO3 is not currently supported with QLoRA but ZeRO3 does support LoRA, which has a reference configuraiton under playground/deepspeed_config_s3.json. To use QLoRA, you must have bitsandbytes>=0.39.0 and transformers>=4.30.0 installed.
+
 ```bash
 deepspeed fastchat/train/train_lora.py \
     --model_name_or_path ~/model_weights/llama-7b \

@@ -1,4 +1,22 @@
+---
+layout: default
+title:  GPTQ 4bit Inference
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
 # GPTQ 4bit Inference
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 
 Support GPTQ 4bit inference with [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa).
 
@@ -8,6 +26,7 @@ Support GPTQ 4bit inference with [GPTQ-for-LLaMa](https://github.com/qwopqwop200
 ## Install
 
 Setup environment:
+
 ```bash
 # cd /path/to/FastChat
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa.git repositories/GPTQ-for-LLaMa
@@ -20,6 +39,7 @@ pip3 install texttable
 ```
 
 Chat with the CLI:
+
 ```bash
 python3 -m fastchat.serve.cli \
     --model-path models/vicuna-7B-1.1-GPTQ-4bit-128g \
@@ -28,6 +48,7 @@ python3 -m fastchat.serve.cli \
 ```
 
 Start model worker:
+
 ```bash
 # Download quantized model from huggingface
 # Make sure you have git-lfs installed (https://git-lfs.com)

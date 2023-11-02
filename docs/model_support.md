@@ -1,4 +1,22 @@
+---
+layout: default
+title:  Model Support
+parent:  docs
+last_modified_date: 2023-11-02 15:48:15
+---
 # Model Support
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 
 ## Supported models
 - [meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
